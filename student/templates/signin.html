@@ -1,0 +1,40 @@
+{% extends 'mainbase.html' %}
+{% load static %}
+{% block title %}signin{% endblock title %}
+
+    {% block content%}
+    <div style=" background-color: rgb(16, 75, 75);
+    padding: 50px;
+    margin-top:  15%;
+    border: 1px dotted rgb(201, 72, 72);
+    border-radius: 25px;
+    margin-right:450px;
+    margin-left:450px">
+       
+        <div style=" display: flex;
+        justify-content: center;">
+        <form>
+          <div style="padding-left:40px;">
+            <button type="button" class="btn btn-info" onclick="window.location.href='../signup'">Sign Up</button>
+            <button type="button" class="btn btn-info">Sign In</button>
+          </div>
+        
+            <h1>SIGN IN</h1>
+            
+                <div class="row d-block">
+                  <div class="col">
+                    <input type="email" class="form-control" placeholder="emailid">
+                  </div>
+                  <div class="col" style="padding-top: 15px;">
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div>
+                </div>
+              <div style="padding-top:15px; padding-left:55px">
+            <button type="button" class="btn btn-info"> signin</button>
+              </div>
+              <div style="text-align:center;">
+                <a href="{% url 'forgot'%}" >Forgot Password</a>
+              </div>
+        </form>
+      </div>
+      {%endblock content%}

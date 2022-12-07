@@ -1,0 +1,13 @@
+{% extends 'mainbase.html' %}
+{% block title %}course{% endblock title %}
+{% block content %}
+<h1 style="text-align: center;color:rgb(31, 223, 111); background-color: cadetblue;">Our Courses</h1>
+{% for c in course %}
+<div class="card" style="background-color:cadetblue ;">
+    <h5 style="color: crimson;">{{c.name}}</h5>
+    <p>{{c.description}}</p>
+    <h6 style="color: crimson;">Duration:</h6><p>{{c.duration}}month<p>
+    <h6 style="color: crimson;">fee:</h6><p>{{c.fee}}</p>   
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'mainbase.html' %}
+{% load static %}
+{% block title %}home{% endblock title %}
+{% block navs %}
+<nav class="nav" style="background-color:purple; ">
+    <a class="nav-link active" aria-current="page" href="#"><h3>home</h3></a>
+    <a class="nav-link" href="{% url 'course' %}"><h3>course</h3></a>
+    <a class="nav-link" href="#"><h3>gallery</h3></a>
+    <a class="nav-link disabled"><h3>contact</h3></a>
+  </nav>
+<div style="background-color:gray ;">  
+   <h1 style="text-align: center;color:red;">CROSSROADS SOFTWARE</h1>
+   <h3 style="color:chartreuse ;">WHO WE ARE</h3>
+   <h5>Crossroads software technologies are an IT-based service Provider Company which is working for three years and fastest-growing company globally that offers ultra-modern software and provides the customized solutions and on-time quality services and expertise, which fulfill and assist the requirements of worthy clients. Crossroads software technologies not only value the clients but also meet the standards of customers. We believe by developing advanced digital work and providing the best quality to the customers we can together built the markup and connect digitally around the globe and make a better tomorrow.
+
+  We not only provide the services but also make sure the customers satisfaction but also offer quality assurance. The Technologies are rapidly becoming advanced and changing on a day to day basis crossroads software technologies not only meets the modernized standards and requirements of the new era but also enables many facilities to the customers through different software which makes it efficient in modern time.
+  
+  It’s the fully authorized and arising company which works on the IT programming and development including all IT software and works, which is handled by the experts focusing on people demands.
+  
+  </h5>
+ <img src="{% static 'image/imgage1.jpg' %}">
+</div>
+ {% endblock navs %} 
